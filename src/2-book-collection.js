@@ -11,5 +11,6 @@ const bookInventory = {
 // "Beloved: 5 copies available"
 // etc...
 
+
 // Part B: Calculate and log the total number of books across all titles (should be 15)
 // Hint: You'll need a variable to keep track of the running total as you loop through the keys
