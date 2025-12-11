@@ -36,3 +36,5 @@ const mostCheckouts = books.reduce((acc /*max*/, book) => {
   } 
 }, 0);
 console.log(mostCheckouts)
+
+

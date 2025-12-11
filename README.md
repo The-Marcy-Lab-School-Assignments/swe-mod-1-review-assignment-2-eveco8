@@ -24,7 +24,7 @@ Be mindful of your AI usage on assignments. AI can be a great tool to help your 
 
 ### Be Okay With Being "Provisionally Complete"
 
-At Marcy, we will deem an assignment as "complete" if the solution passes at least **75%** of the automated tests. 
+At Marcy, we will deem an assignment as "complete" if the solution passes at least **75%** of the automated tests.
 
 However, we know many of you will feel the urge to hold off on submitting until your assignment feels 100% perfect. That drive for excellence is an asset!
 
@@ -44,13 +44,12 @@ For guidance on setting up and submitting this assignment, refer to the Marcy la
 
 Here are some useful commands to remember.
 
-```sh
+````sh
 git checkout -b draft   # switch to the draft branch before starting
 
 git add -A              # add a changed file to the staging area
 git commit -m 'message' # create a commit with the changes
-git push                # push the new commit to the remote repo
-```
+src```
 
 When you are finished, create a pull request and tag your instructor for review.
 
@@ -83,7 +82,7 @@ Expected Final Output:
   totalPrice: 99.99,
   itemCount: 3
 }
-```
+````
 
 ### Problem 2: Book Collection Dictionary
 
@@ -92,10 +91,10 @@ You have an object that maps book titles to the number of copies available:
 ```js
 const bookInventory = {
   "The Bluest Eye": 3,
-  "Beloved": 5,
-  "Homegoing": 2,
+  Beloved: 5,
+  Homegoing: 2,
   "The Vanishing Half": 4,
-  "Between the World and Me": 1
+  "Between the World and Me": 1,
 };
 ```
 
@@ -119,7 +118,7 @@ Given this code:
 const team1 = {
   name: "Warriors",
   wins: 45,
-  losses: 20
+  losses: 20,
 };
 
 const team2 = team1;
@@ -137,12 +136,48 @@ Your job is to analyze this data from a music streaming service.
 
 ```js
 const songs = [
-  { title: "Essence", artist: "Wizkid", streams: 2500000, duration: 226, releaseYear: 2020 },
-  { title: "Peru", artist: "Fireboy DML", streams: 1800000, duration: 195, releaseYear: 2021 },
-  { title: "Last Last", artist: "Burna Boy", streams: 3200000, duration: 275, releaseYear: 2022 },
-  { title: "Calm Down", artist: "Rema", streams: 4100000, duration: 239, releaseYear: 2022 },
-  { title: "Love Nwantiti", artist: "CKay", streams: 3800000, duration: 134, releaseYear: 2019 },
-  { title: "Buga", artist: "Kizz Daniel", streams: 2100000, duration: 242, releaseYear: 2022 }
+  {
+    title: "Essence",
+    artist: "Wizkid",
+    streams: 2500000,
+    duration: 226,
+    releaseYear: 2020,
+  },
+  {
+    title: "Peru",
+    artist: "Fireboy DML",
+    streams: 1800000,
+    duration: 195,
+    releaseYear: 2021,
+  },
+  {
+    title: "Last Last",
+    artist: "Burna Boy",
+    streams: 3200000,
+    duration: 275,
+    releaseYear: 2022,
+  },
+  {
+    title: "Calm Down",
+    artist: "Rema",
+    streams: 4100000,
+    duration: 239,
+    releaseYear: 2022,
+  },
+  {
+    title: "Love Nwantiti",
+    artist: "CKay",
+    streams: 3800000,
+    duration: 134,
+    releaseYear: 2019,
+  },
+  {
+    title: "Buga",
+    artist: "Kizz Daniel",
+    streams: 2100000,
+    duration: 242,
+    releaseYear: 2022,
+  },
 ];
 ```
 
@@ -153,6 +188,7 @@ const songs = [
 **Part C:** Use `find` to locate the song "Calm Down" and store it in a variable called `calmDown`.
 
 **Part D:** Use `forEach` to log each song in this format:
+
 ```
 Essence by Wizkid - 2500000 streams
 Peru by Fireboy DML - 1800000 streams
@@ -165,12 +201,48 @@ You are building analytics for a library system:
 
 ```js
 const books = [
-  { title: "The Fire Next Time", author: "James Baldwin", pages: 224, available: true, checkouts: 45 },
-  { title: "Sister Outsider", author: "Audre Lorde", pages: 192, available: false, checkouts: 38 },
-  { title: "The Autobiography of Malcolm X", author: "Malcolm X", pages: 466, available: true, checkouts: 52 },
-  { title: "I Know Why the Caged Bird Sings", author: "Maya Angelou", pages: 289, available: true, checkouts: 67 },
-  { title: "The Souls of Black Folk", author: "W.E.B. Du Bois", pages: 264, available: false, checkouts: 41 },
-  { title: "Their Eyes Were Watching God", author: "Zora Neale Hurston", pages: 219, available: true, checkouts: 59 }
+  {
+    title: "The Fire Next Time",
+    author: "James Baldwin",
+    pages: 224,
+    available: true,
+    checkouts: 45,
+  },
+  {
+    title: "Sister Outsider",
+    author: "Audre Lorde",
+    pages: 192,
+    available: false,
+    checkouts: 38,
+  },
+  {
+    title: "The Autobiography of Malcolm X",
+    author: "Malcolm X",
+    pages: 466,
+    available: true,
+    checkouts: 52,
+  },
+  {
+    title: "I Know Why the Caged Bird Sings",
+    author: "Maya Angelou",
+    pages: 289,
+    available: true,
+    checkouts: 67,
+  },
+  {
+    title: "The Souls of Black Folk",
+    author: "W.E.B. Du Bois",
+    pages: 264,
+    available: false,
+    checkouts: 41,
+  },
+  {
+    title: "Their Eyes Were Watching God",
+    author: "Zora Neale Hurston",
+    pages: 219,
+    available: true,
+    checkouts: 59,
+  },
 ];
 ```
 
@@ -181,4 +253,3 @@ const books = [
 **Part E:** Use `reduce` to find the highest number of checkouts any single book has received. Store this in a variable called `mostCheckouts`.
 
 Hint for Part E: Start with `0` and compare each book's checkouts to your accumulator. If the book's checkouts are higher, return that number; otherwise, return the current accumulator.
-

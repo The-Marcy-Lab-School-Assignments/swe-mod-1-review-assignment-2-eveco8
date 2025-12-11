@@ -11,13 +11,13 @@ const bookInventory = {
 // "Beloved: 5 copies available"
 // etc...
 
-  // const keys = Object.keys(bookInventory)
+  const keys = Object.keys(bookInventory)
 
-  // for (let i = 0; i < keys.length; i++) {
-  //  const key = keys[i]
-  //  const value = bookInventory[key]
-  //  console.log(`${key}: ${value} copies available`)
-  // }
+  for (let i = 0; i < keys.length; i++) {
+   const key = keys[i]
+   const value = bookInventory[key]
+   console.log(`${key}: ${value} copies available`)
+  }
 
 
 
